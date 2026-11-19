@@ -14,11 +14,15 @@
 
 #include "autoware/planning_evaluator/metric_accumulators/trajectory_validation_accumulator.hpp"
 
+#include <autoware_trajectory_validator/msg/risk_level.hpp>
+
 #include <cmath>
 #include <regex>
 
 namespace planning_diagnostics
 {
+using autoware_trajectory_validator::msg::RiskLevel;
+
 namespace
 {
 bool levelIndicatesError(
