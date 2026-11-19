@@ -228,6 +228,10 @@ private:
     blinker_sub_ =
       autoware::agnocast_wrapper::polling::create_polling_subscriber<TurnIndicatorsReport>(
         this, "~/input/turn_indicators_status");
+  autoware::agnocast_wrapper::polling::PollingSubscriber<ValidationReportArray>::SharedPtr
+    validation_reports_sub_ =
+      autoware::agnocast_wrapper::polling::create_polling_subscriber<ValidationReportArray>(
+        this, "~/input/validation_reports");
 
   std::unordered_map<
     std::string,
