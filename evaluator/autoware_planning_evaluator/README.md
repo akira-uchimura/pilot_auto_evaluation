@@ -348,7 +348,7 @@ Additional useful information related to planning:
 | `~/input/acceleration`           | `geometry_msgs::msg::AccelWithCovarianceStamped`            | Current acceleration of the vehicle               |
 | `~/input/steering_status`        | `autoware_vehicle_msgs::msg::SteeringReport`                | Current steering of the vehicle                   |
 | `~/input/turn_indicators_status` | `autoware_vehicle_msgs::msg::TurnIndicatorsReport`          | Current blinker status of the vehicle             |
-| `~/input/validation_reports`     | `autoware_trajectory_validator::msg::ValidationReportArray` | Trajectory validation reports                     |
+| `~/input/validation_reports`     | `autoware_internal_planning_msgs::msg::ValidationReportArray` | Trajectory validation reports                     |
 | `{topic_prefix}/{module_name}`   | `autoware_internal_planning_msgs::msg::PlanningFactorArray` | Planning factors of each module to evaluate       |
 
 ### Outputs
